@@ -33,6 +33,6 @@ class TipViewModel: ViewModel() {
     }
 
     fun returnTotal(): Double {
-        return tip/split.toDouble()
+        return (tip + billAmount)/split.toDouble()
     }
 }
