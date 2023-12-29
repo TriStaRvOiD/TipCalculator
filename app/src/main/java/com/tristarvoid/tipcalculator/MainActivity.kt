@@ -139,7 +139,8 @@ class MainActivity : ComponentActivity() {
                                         }
                                         Text(text = tipViewModel.split.toString())
                                         IconButton(onClick = {
-                                            tipViewModel.split++
+                                            if (tipViewModel.split < 100)
+                                                tipViewModel.split++
                                         }) {
                                             Icon(
                                                 imageVector = Icons.Default.Add,
